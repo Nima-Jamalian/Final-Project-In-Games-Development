@@ -156,9 +156,13 @@ namespace StarterAssets
         {
             _hasAnimator = TryGetComponent(out _animator);
 
-            JumpAndGravity();
-            GroundedCheck();
-            Move();
+            if(isWaving == false)
+            {
+                JumpAndGravity();
+                GroundedCheck();
+                Move();
+            }
+            Wave();
         }
 
         private void LateUpdate()
@@ -279,6 +283,23 @@ namespace StarterAssets
             }
         }
 
+        bool isWaving = false;
+        private void Wave()
+        {
+            if (Input.GetKeyDown(KeyCode.V))
+            {
+                _animator.SetTrigger("Wave");
+            }
+
+            if(_animator.GetCurrentAnimatorStateInfo(0).IsName("Waving") == true)
+            {
+                isWaving = true;
+            } else
+            {
+                isWaving = false;
+            }
+        }
+
         private void JumpAndGravity()
         {
             if (Grounded)
@@ -347,6 +368,8 @@ namespace StarterAssets
                 _verticalVelocity += Gravity * Time.deltaTime;
             }
         }
+
+ 
 
         private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
         {
