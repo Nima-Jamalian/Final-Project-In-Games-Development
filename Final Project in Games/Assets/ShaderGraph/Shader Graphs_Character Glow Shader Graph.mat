@@ -50,7 +50,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Emission:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 7617952411802729741, guid: f52251e950d8d4d6b95bd1e132c3614b,
+          type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -67,9 +68,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Rim_Power: 2.37
+    - Rim_Power: 5
     - _QueueControl: 1
     - _QueueOffset: 0
     m_Colors:
-    - Rim_Color: {r: 1, g: 1, b: 1, a: 0}
+    - Rim_Color: {r: 8.47419, g: 8.47419, b: 8.47419, a: 0}
   m_BuildTextureStacks: []
