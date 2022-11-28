@@ -39,8 +39,8 @@ Material:
     - _QueueOffset: 0
     - _Rime_Size: 15
     m_Colors:
-    - _Base_Color: {r: 0.16470587, g: 0.169402, b: 1, a: 0}
-    - _Rim_Color: {r: 766.9961, g: 0, b: 80.31373, a: 0}
+    - _Base_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _Rim_Color: {r: 103.96829, g: 103.96829, b: 103.96829, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3832346360741203111
 MonoBehaviour:
